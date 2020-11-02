@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: 1px dashed green;
+}
+
+body{
+    background-color:rgb(122, 12, 12) ;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+/*Stilizovanje zaglavlja i menija*/
+#zaglavlje{
+    /*height: 150px;*/
+    background-color: rgb(250, 214, 181);
+}
+
+h1{
+    font-size: 34px;
+    color: rgb(122, 12, 12);
+    width: 88.2%;
+    display: inline-block;
+    vertical-align: top;
+    font-style: italic;
+    padding: 31px 50px;
+    text-align: center;
+}
+
+#logo{
+    width: 175px;
+    height: 150px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: -22px;
+}
+
+nav{
+    position: sticky;
+    z-index: 10;
+    top: -2px;
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 40px;
+    background-color: rgb(250, 214, 181);
+    color: rgb(122, 12, 12);
+    border: solid 1px rgb(122, 12, 12);
+}
+
+#meni{
+    display: inline-block;
+    width: 80%;
+}
+
+li{
+    display: inline-block;
+    padding: 5px 80px;
+}
+
+#jezici{
+    display: inline;
+    float: right;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
+nav a:hover{
+    cursor: pointer;
+    color: rgb(250, 214, 181);
+    background-color: rgb(122, 12, 12);
+    transition: all 0.4s;
+}
+
+nav{
+    text-align: center;
+}
+
+
+/*Stilizovanje "tela" stranice*/
+main{
+    text-align: center;
+    width: 100%;
+}
+
+#fotografija{
+   display: block;
+}
+
+.tekst{
+    text-align: justify;
+    width: 70%;
+    background-color:rgb(122, 12, 12);
+    color:   rgb(250, 214, 181);
+    text-indent: 50px;
+    line-height: 25px;
+    border: 1px solid rgb(250, 214, 181);
+    border-radius: 20px 20px 0px 0px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: -5px;
+    padding: 50px;
+}
+
+#donjiTekst{
+    margin-top: -10px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.tekst h2{
+    font-size: 25px;
+    padding: 15px 0px 35px 0px;
+}
+
+.tekst h3{
+    font-size: 25px;
+    padding: 35px 0px 15px 0px;
+}
+
+
+/*Stilizovanje footera*/
+footer{
+    width: 100%;
+    height: 30px;
+    background-color:rgb(250, 214, 181);
+    color:rgb(122, 12, 12);
+    text-align: center;
+    padding: 15px 0px 50px;
+    bottom: 0px;
+    position: absolute;
+}
+
+footer > a{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+footer > a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+table{
+    margin: auto;
+    margin-top: 50px;
+    color:rgb(250, 214, 181);
+}
+
+td{
+    padding: 10px 5px;
+}
+
+#druga{
+    padding-bottom: 15px;
+}
+
+.levi{
+   text-align: right;
+   font-style: italic;
+}
+
+.desni{
+    text-align: left;
+    text-decoration: underline;
+}
+
+iframe{
+    margin: 50px 80px;
+}
+
+
+/*Stilizovanje stranice "sekcije"*/
+#sekcije{
+    width: 80%;
+    margin: auto;
+}
+
+article{
+    /*position: relative;
+    z-index: 1;*/
+    width: 100%;
+    padding: 30px;
+    margin: 30px 0px;
+    background-color:rgb(250, 214, 181);
+    color:rgb(122, 12, 12);
+}
+
+article h2{
+    width: 70%;
+    padding-bottom: 5px;
+}
+
+article p{
+    width: 70%;
+    float: left;
+    text-align: justify;
+    text-indent: 50px;
+    padding: 5px 10px;
+}
+
+.igraci h2{
+    text-align: left;
+    text-indent: 50px;
+}
+
+.igraci img{
+    float: right;
+}
+
+.muzicari h2{
+    float: right;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.muzicari img{
+    float: left;
+    vertical-align: middle;
+}
+
+.muzicari p{
+    float: right;
+}
+
+/*Pošto imam fotografije različitih formata, i dužina teksta po jednom polju "article" varira pribegao sam ovom rešenju određivanja visine pojedinačno za svaki element.*/
+
+.pr{
+ height: 330px;   
+}
+
+.dr{
+    height: 420px;
+}
+
+.tr{
+    height: 345px;
+}
+
+.ce{
+    height: 345px;
+}
+
+.pe{
+    height: 435px;
+}
+
+.pr img{
+    margin-top: 15px;
+}
+
+.dr img{
+    margin-top: 40px;
+}
+
+.ce img{
+    margin-top: 25px;
+}
+
+.pe img{
+    margin-top: 55px;
+}
